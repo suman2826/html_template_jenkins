@@ -8,7 +8,7 @@ pipeline {
 
   stages{
     stage("Init pipeline"){
-      soteps{
+      steps{
         script{
           echo "Hello everyone"
       }
