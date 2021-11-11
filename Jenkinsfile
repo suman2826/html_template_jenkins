@@ -18,7 +18,7 @@ pipeline {
       steps{
         script{
           emailext mimeType: 'text/html',
-                  body: '${SCRIPT,template="template.html"}', 
+                  body: '${SCRIPT,template="html_template.html"}', 
                   subject: 'Selenium: Job ' 
                   to: "${MAIL}"
         }
